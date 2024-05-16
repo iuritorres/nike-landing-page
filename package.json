@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://iuritorres.github.io/nike-landing-page/",
+  "homepage": "https://iuritorres.github.io/nike-landing-page/#",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
