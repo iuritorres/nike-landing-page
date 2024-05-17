@@ -12,8 +12,8 @@ const Footer = () => {
           </a>
 
           <p className='mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm'>
-            Get shoes ready for the new term at your nearest Nike store. Find
-            Your perfect Size In Store. Get Rewards
+            Prepare os calçados para o novo período na loja Nike mais próxima.
+            Encontre o tamanho perfeito na loja. Obtenha recompensas.
           </p>
 
           <div className='flex items-center gap-5 mt-8 mb-12'>
@@ -21,6 +21,7 @@ const Footer = () => {
               <a
                 key={icon.alt}
                 href='#'
+                target='_blank'
                 className='flex justify-center items-center w-12 h-12 bg-white rounded-full hover:bg-white/60 hover:scale-110'
               >
                 <img src={icon.src} alt={icon.alt} width={24} height={24} />
@@ -42,7 +43,9 @@ const Footer = () => {
                     key={link.name}
                     className='mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer transition-none'
                   >
-                    <a>{link.name}</a>
+                    <a href='#' target='_blank'>
+                      {link.name}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -61,12 +64,16 @@ const Footer = () => {
             className='rounded-full m-0'
           />
           <p className='hover:text-slate-gray'>
-            Copyright. All rights reserved.
+            Copyright. Todos os direitos reservados.
           </p>
         </div>
-        <p className='font-montserrat cursor-pointer hover:text-slate-gray'>
-          Terms & Services
-        </p>
+        <a
+          href='#'
+          target='_blank'
+          className='font-montserrat cursor-pointer hover:text-slate-gray'
+        >
+          Termos & Serviços
+        </a>
       </div>
     </footer>
   );
