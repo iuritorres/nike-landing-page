@@ -10,7 +10,7 @@ function Button({
     <button
       className={`
         flex justify-center items-center gap-2 px-7 py-4 border font-montserrat
-        text-lg leading-none rounded-full
+        text-lg leading-none rounded-full hover:scale-105
         ${
           backgroundColor
             ? `${backgroundColor} ${borderColor} ${textColor}`
